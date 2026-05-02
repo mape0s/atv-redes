@@ -6,3 +6,10 @@
 [18:37:24] maria: a
 [18:37:38] maria entrou em 3
 [18:37:53] maria: /pm
+[20:08:21] server started
+[20:09:13] carlos entrou em 3
+[20:09:20] maria  entrou em 2
+[20:10:00] joao entrou em 3
+[20:10:03] joao: oi
+[20:10:06] maria : alo
+[20:10:09] carlos: oi joao

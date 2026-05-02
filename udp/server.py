@@ -1,13 +1,11 @@
 import socket
-import datetime
  
 usuarios = {}
 salas = {}
  
 def log(msg):
-    hora = datetime.datetime.now().strftime('%H:%M:%S')
-    print(f'[{hora}] {msg}')
-    open('log.txt', 'a').write(f'[{hora}] {msg}\n')
+    print(msg)
+    open('log.txt', 'a').write(msg + '\n')
  
 def broadcast(server_socket, msg, sala):
     for name in salas:
