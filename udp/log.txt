@@ -1,0 +1,8 @@
+[18:35:12] server started
+[18:35:42] carlos entrou em 3
+[18:35:49] carlos: oi
+[18:36:33] carlos: /entar
+[18:37:22] maria entrou em 2
+[18:37:24] maria: a
+[18:37:38] maria entrou em 3
+[18:37:53] maria: /pm
