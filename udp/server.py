@@ -33,12 +33,12 @@ def start_server(host, port):
             lista = ', '.join(usuarios.keys())
             server_socket.sendto(lista.encode('utf-8'), addr)
  
-        elif message[0:4] == '/pm ':
+        elif message[0:4] == '/pv ':
             partes = message.split(' ', 2)
             dest = partes[1]
             texto = partes[2]
             log(name + ' -> ' + dest + ': ' + texto)
-            server_socket.sendto(('[pm de ' + name + ']: ' + texto).encode('utf-8'), usuarios[dest])
+            server_socket.sendto(('[pv de ' + name + ']: ' + texto).encode('utf-8'), usuarios[dest])
  
         else:
             log(name + ': ' + message)

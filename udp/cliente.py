@@ -19,9 +19,9 @@ def connect_server(host: str, port: int):
     while True:
         message = input()
  
-        if message[0:4] == '/pm ':
+        if message[0:4] == '/pv ':
             partes = message.split(' ', 2)
-            data = f"{nome}!#/pm {partes[1]} {partes[2]}".encode('utf-8')
+            data = f"{nome}!#/pv {partes[1]} {partes[2]}".encode('utf-8')
             client_socket.sendto(data, (host,port))
  
         elif message == '/usuarios':

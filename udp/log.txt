@@ -14,3 +14,17 @@
 [20:10:06] maria : alo
 [20:10:09] carlos: oi joao
 server started
+maria entrou em 2
+carlos entrou em 3
+joao entrou em 2
+alberto entrou em 3
+carlos -> joao,: oi joao
+server started
+joao entrou em 2
+marcos entrou em 3
+maria entrou em 2
+alberto entrou em 3
+joao -> joao: oi, tudo bem
+joao -> maria: oi 
+marcos: oi 
+maria: tudo bem 
