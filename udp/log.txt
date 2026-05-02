@@ -13,3 +13,4 @@
 [20:10:03] joao: oi
 [20:10:06] maria : alo
 [20:10:09] carlos: oi joao
+server started
