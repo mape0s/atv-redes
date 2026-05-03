@@ -7,7 +7,7 @@ def log(msg):
     print(msg)
     open('log.txt', 'a').write(msg + '\n')
  
-def broadcast(server_socket, msg, sala):
+def enviar(server_socket, msg, sala):
     for name in salas:
         if salas[name] == sala:
             server_socket.sendto(msg.encode('utf-8'), usuarios[name])
@@ -27,7 +27,7 @@ def start_server(host, port):
             usuarios[name] = addr
             salas[name] = sala
             log(name + ' entrou em ' + sala)
-            broadcast(server_socket, name + ' entrou', sala)
+            enviar(server_socket, name + ' entrou', sala)
  
         elif message == '/usuarios':
             lista = ', '.join(usuarios.keys())
@@ -42,7 +42,7 @@ def start_server(host, port):
  
         else:
             log(name + ': ' + message)
-            broadcast(server_socket, name + ': ' + message, salas[name])
+            enviar(server_socket, name + ': ' + message, salas[name])
  
 if __name__ == '__main__':
     HOST = 'localhost'

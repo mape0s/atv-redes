@@ -28,3 +28,12 @@ joao -> joao: oi, tudo bem
 joao -> maria: oi 
 marcos: oi 
 maria: tudo bem 
+server started
+joao entrou em 2
+maria entrou em 2
+leo entrou em 1
+maria: oi pessoal
+joao: oi maria
+leo: oi 
+maria -> leo: vem para a sala 2
+leo -> maria: ok maria
